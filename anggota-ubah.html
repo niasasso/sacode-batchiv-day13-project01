@@ -190,13 +190,18 @@
 			                                <label for="address"></label>
 			                                <div class="invalid-feedback" data-sb-feedback="address:required">A message is required.</div>
                             			</div>
-	                            			<div>
-	                            				<a target="_blank" href="https://github.com/">GitHub</a>
-	                            			</div>
-	                            			<div>
-	                            				<a target="_blank" href="https://www.instagram.com/">Instagram</a>
-	                            			</div>
-                                    </form>
+	                            		<div class="form-floating mb-3">
+                                            <input class="form-control" id="github" type="text" placeholder="https://github.com/niasasso" data-sb-validations="required,github" />
+                                            <label for="github"></label>
+                                            <div class="invalid-feedback" data-sb-feedback="github:required">An email is required.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="github:github">Email is not valid.</div>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input class="form-control" id="instagram" type="text" placeholder="https://www.instagram.com/suleniash_asso" data-sb-validations="required,instagram" />
+                                            <label for="instagram"></label>
+                                            <div class="invalid-feedback" data-sb-feedback="instagram:required">An email is required.</div>
+                                            <div class="invalid-feedback" data-sb-feedback="instagram:instagram">Email is not valid.</div>
+                                        </div>
                                 </div>
                                 <!-- end .card-body -->
                             </div>
@@ -222,7 +227,7 @@
 
                         </div>
 
-                        <div class="col-xl-10"><hr class="btn-block"></div>
+                        <div class="col-xl-12"><hr class="btn-block"></div>
                         
                         <div class="col-auto">
                         	<div class="d-sm-flex align-items-center justify-content-between mb-4">
