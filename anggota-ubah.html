@@ -20,9 +20,6 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -157,101 +154,87 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Anggota</h1>
-                        <a href="anggota-tambah.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                            <i class="fas fa-plus fa-sm"></i>
-                            Tambah
-                        </a>
+                        <h1 class="h3 mb-0 text-gray-800">Anggota > Ubah</h1>
+                        <a href="anggota.html" class="d-none d-sm-inline-block btn btn-sm btn-light shadow-sm"><i
+                                class="fas fa-arrow-left fa-md fa-fw text-black"></i>Kembali</a>
                     </div>
 
 
                     <!-- .row -->
                     <div class="row">
                         <!-- .col -->
-                        <div class="col-12 mb-4">
+                        <div class="col-6 mb-4">
                             <!-- card -->
                             <div class="card shadow">
                                 <!-- .card-body -->
                                 <div class="card-body">
-                                    
-
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>No</th>
-                                                    <th>Nama Lengkap</th>
-                                                    <th>Alamat</th>
-                                                    <th>Email</th>
-                                                    <th>Opsi</th>
-                                                   
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Nama Lengkap</th>
-                                                    <th>Alamat</th>
-                                                    <th>Email</th>
-                                                    <th>Opsi</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Sulenias Asso</td>
-                                                    <td>Padang Bulan, Abe Jayapura Kota, Papua</td>
-                                                    <td>niasasso1@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Delvi Wamu</td>
-                                                    <td>Padang Bulan, Abe Jayapura Kota, Papua</td>
-                                                    <td>delvi@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Archy</td>
-                                                    <td>Perumnas I, Waena, Jayapura Kota, Papua</td>
-                                                    <td>Archys@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>Janzhen Faidiban</td>
-                                                    <td>Dosay, Sentani barat, Kota Jayapura, Papua</td>
-                                                    <td>janzhen@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
-
+                                    <form>
+                                    	<div class="form-floating mb-3">
+			                                <input class="form-control" id="#" type="text" placeholder="Sulenias" data-sb-validations="required" />
+			                                <label for="#"></label>
+			                                <div class="invalid-feedback" data-sb-feedback="#:required">A name is required.</div>
+                            			</div>
+                            			<div class="form-floating mb-3">
+			                                <input class="form-control" id="#" type="text" placeholder="Asso" data-sb-validations="required" />
+			                                <label for="#"></label>
+			                                <div class="invalid-feedback" data-sb-feedback="#:required">A name is required.</div>
+                            			</div>
+                            			<div class="form-floating mb-3">
+			                                <input class="form-control" id="#" type="#" placeholder="aco@gmail.com" data-sb-validations="required,#" />
+			                                <label for="#"></label>
+			                                <div class="invalid-feedback" data-sb-feedback="#:required">An email is required.</div>
+			                                <div class="invalid-feedback" data-sb-feedback="#:#">Email is not valid.</div>
+                            			</div>
+                            			<div class="form-floating mb-3">
+			                                <textarea class="form-control" id="address" type="text" placeholder="Padang bulan, Abe, Jayapura Kota, Papua" style="height: 10rem" data-sb-validations="required"></textarea>
+			                                <label for="address"></label>
+			                                <div class="invalid-feedback" data-sb-feedback="address:required">A message is required.</div>
+                            			</div>
+	                            			<div>
+	                            				<a target="_blank" href="https://github.com/">GitHub</a>
+	                            			</div>
+	                            			<div>
+	                            				<a target="_blank" href="https://www.instagram.com/">Instagram</a>
+	                            			</div>
+                                    </form>
                                 </div>
                                 <!-- end .card-body -->
                             </div>
                             <!-- end .card -->
+                        </div>
+
+                        <div class="col-6 mb-4">
+                            <!-- card -->
+                            <div class="card shadow">
+                                <!-- .card-body -->
+                                <div class="card-body text-center">
+                                    <div class="text-center" class="d-sm-flex align-items-center justify-content-between mb-4">
+									  <img class="border border-secondary" src="img/ac.jpg" class="rounded" alt="..." width="200px">
+									</div><br>
+				                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+				                            <i class="fas fa-upload fa-sm"></i>
+				                            Ganti Foto
+				                        </a>
+                                </div>
+                                <!-- end .card-body -->
+                            </div>
+                            <!-- end .card -->
+
+                        </div>
+
+                        <div class="col-xl-10"><hr class="btn-block"></div>
+                        
+                        <div class="col-auto">
+                        	<div class="d-sm-flex align-items-center justify-content-between mb-4">
+		                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+		                            <i class="fas fa-plus fa-sm"></i>
+		                            Tambah
+		                        </a>
+		                        <a href="#" class="ml-3 btn btn-sm btn-light shadow-sm">
+		                            <i class="fas fa-solid fa-ban text-black"></i>
+		                            Batal
+		                        </a>
+                    		</div>
                         </div>
                         <!-- end .col -->
                         
@@ -323,13 +306,6 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

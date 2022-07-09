@@ -20,9 +20,6 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -157,106 +154,38 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Anggota</h1>
-                        <a href="anggota-tambah.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                            <i class="fas fa-plus fa-sm"></i>
-                            Tambah
-                        </a>
+                        <h1 class="h3 mb-0 text-gray-800">Anggota > Hapus</h1>
+                        <a href="anggota.html" class="d-none d-sm-inline-block btn btn-sm btn-light shadow-sm"><i
+                                class="fas fa-arrow-left fa-md fa-fw text-black"></i>Kembali</a>
                     </div>
 
-
+                    <div class="container">
                     <!-- .row -->
-                    <div class="row">
-                        <!-- .col -->
-                        <div class="col-12 mb-4">
-                            <!-- card -->
-                            <div class="card shadow">
-                                <!-- .card-body -->
-                                <div class="card-body">
-                                    
+                    <div class="card mb-3" style="max-width: 540px;">
+					  <div class="row g-0 modal-body">
+					    <div class="col-md-4 modal-body">
+					      <img class="justify-content-center" src="img/sp.png" alt="..." width="70px">
+					    </div>
+					    <div class="col-md-8">
+					      <div class="card-body">
+					        <h5 class="card-title">Hapus!</h5>
+					        <p class="card-text">Anda yakin ingin menghapus ini?</p>
 
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>No</th>
-                                                    <th>Nama Lengkap</th>
-                                                    <th>Alamat</th>
-                                                    <th>Email</th>
-                                                    <th>Opsi</th>
-                                                   
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Nama Lengkap</th>
-                                                    <th>Alamat</th>
-                                                    <th>Email</th>
-                                                    <th>Opsi</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Sulenias Asso</td>
-                                                    <td>Padang Bulan, Abe Jayapura Kota, Papua</td>
-                                                    <td>niasasso1@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Delvi Wamu</td>
-                                                    <td>Padang Bulan, Abe Jayapura Kota, Papua</td>
-                                                    <td>delvi@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Archy</td>
-                                                    <td>Perumnas I, Waena, Jayapura Kota, Papua</td>
-                                                    <td>Archys@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>Janzhen Faidiban</td>
-                                                    <td>Dosay, Sentani barat, Kota Jayapura, Papua</td>
-                                                    <td>janzhen@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+					        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-light shadow-sm">
+		                            <i class="fas fa-trash fa-sm text-black"></i>
+		                            Hapus
+		                        </a>
+		                        <a href="#" class="ml-3 btn btn-sm btn-primary shadow-sm">
+		                            <i class="fas fa-solid fa-ban text-black"></i>
+		                            Tidak
+		                        </a>				
+					      </div>
 
-
-                                </div>
-                                <!-- end .card-body -->
-                            </div>
-                            <!-- end .card -->
-                        </div>
-                        <!-- end .col -->
-                        
-                    </div>
+					    </div>
+					  </div>
+					</div>
                     <!-- end .row -->
+                    </div>
 
 
 
@@ -323,13 +252,6 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 

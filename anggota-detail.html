@@ -20,9 +20,6 @@
     <!-- Custom styles for this template-->
     <link href="css/sb-admin-2.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this page -->
-    <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
-
 </head>
 
 <body id="page-top">
@@ -157,96 +154,39 @@
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Anggota</h1>
-                        <a href="anggota-tambah.html" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                            <i class="fas fa-plus fa-sm"></i>
-                            Tambah
-                        </a>
+                        <h1 class="h3 mb-0 text-gray-800">Anggota > Detail</h1>
+                        <a href="anggota.html" class="d-none d-sm-inline-block btn btn-sm btn-light shadow-sm"><i
+                                class="fas fa-edit fa-sm text-black-50"></i>Ubah</a>
                     </div>
 
 
                     <!-- .row -->
                     <div class="row">
                         <!-- .col -->
-                        <div class="col-12 mb-4">
+                        <div class="col-12 justify-content-center">
                             <!-- card -->
                             <div class="card shadow">
                                 <!-- .card-body -->
                                 <div class="card-body">
                                     
-
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
-                                            <thead>
-                                                <tr>
-                                                    <th>No</th>
-                                                    <th>Nama Lengkap</th>
-                                                    <th>Alamat</th>
-                                                    <th>Email</th>
-                                                    <th>Opsi</th>
-                                                   
-                                                </tr>
-                                            </thead>
-                                            <tfoot>
-                                                <tr>
-                                                    <th>Name</th>
-                                                    <th>Nama Lengkap</th>
-                                                    <th>Alamat</th>
-                                                    <th>Email</th>
-                                                    <th>Opsi</th>
-                                                </tr>
-                                            </tfoot>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Sulenias Asso</td>
-                                                    <td>Padang Bulan, Abe Jayapura Kota, Papua</td>
-                                                    <td>niasasso1@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>2</td>
-                                                    <td>Delvi Wamu</td>
-                                                    <td>Padang Bulan, Abe Jayapura Kota, Papua</td>
-                                                    <td>delvi@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3</td>
-                                                    <td>Archy</td>
-                                                    <td>Perumnas I, Waena, Jayapura Kota, Papua</td>
-                                                    <td>Archys@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>4</td>
-                                                    <td>Janzhen Faidiban</td>
-                                                    <td>Dosay, Sentani barat, Kota Jayapura, Papua</td>
-                                                    <td>janzhen@gmail.com</td>
-                                                    <td>
-                                                        <a href="anggota-detail.html" class="btn btn-primary">Detail</a>
-                                                        <a href="anggota-ubah.html" class="btn btn-success">Ubah</a>
-                                                        <a href="anggota-hapus.html" class="btn btn-danger">Hapus</a>
-                                                    </td>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
+                                	<div class="card mb-5 " style="max-width: 540px;">
+									  <div class="row g-0 ">
+									    <div class="col-md-6">
+									      <img src="img/ac.jpg" class="img-fluid rounded-start" alt="...">
+									    </div>
+									    <div class="col-md-6">
+									      <div class="card-body">
+									        <h3>Sulenias Asso</h3><br>
+									        <h5>Email : </h5>
+									        <p>aco@gmail.com</p>
+									        <h5>Alamat : </h5>
+									        <p>Padang bulan, Abe, Jayapura kota, Papua</p>
+									        <h5>GitHub : </h5>
+									        <p>https://github.com/niasasso</p>
+									      </div>
+									    </div>
+									  </div>
+									</div>
 
                                 </div>
                                 <!-- end .card-body -->
@@ -323,13 +263,6 @@
     <!-- Page level custom scripts -->
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-
-    <!-- Page level plugins -->
-    <script src="vendor/datatables/jquery.dataTables.min.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
-
-    <!-- Page level custom scripts -->
-    <script src="js/demo/datatables-demo.js"></script>
 
 </body>
 
